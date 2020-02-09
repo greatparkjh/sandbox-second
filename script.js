@@ -1,4 +1,4 @@
-/* version 1.0.0 */
+/* v 1.0.0 */
 function pagination(a) {
     var e = "";
     leftnum = parseInt(numshowpage / 2), leftnum == numshowpage - leftnum && (numshowpage = 2 * leftnum + 1), start = postnumber - leftnum, start < 1 && (start = 1), maximum = parseInt(a / postperpage) + 1, maximum - 1 == a / postperpage && (maximum -= 1), end = start + numshowpage - 1, end > maximum && (end = maximum), e += "<span class='totalpages'>Page " + postnumber + " of " + maximum + "</span>";
